@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "controllers.js",
+  "sourceRoot": "../../coffeescripts/",
+  "sources": [
+    "controllers.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;AAAA,MAAA,SAAA;;AAAA,EAAA,SAAA,wDAAY,UAAU,IAAtB,CAAA;;AAAA,EAEA,SAAS,CAAC,UAAV,GAAuB,OAAO,CAAC,MAAR,CAAe,YAAf,EAA6B,EAA7B,CAFvB,CAAA;;AAAA,EAIA,SAAS,CAAC,UAAU,CAAC,UAArB,CAAgC,aAAhC,EAA+C,SAAC,MAAD,GAAA;WAC7C,MAAM,CAAC,GAAP,GACE;AAAA,MAAA,KAAA,EAAW,IAAA,IAAA,CAAA,CAAM,CAAC,QAAP,CAAA,CAAX;MAF2C;EAAA,CAA/C,CAJA,CAAA;AAAA"
+}
