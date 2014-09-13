@@ -5,10 +5,10 @@
   "main": "express/server.coffee",
   "private": "true",
   "scripts": {
-    "build": "./node_modules/grunt/bin/grunt",
+    "build": "grunt",
     "postinstall": "./node_modules/bower/bin/bower install --config.interactive=false",
     "start": "coffee express/server.coffee",
-    "test": "./node_modules/grunt/bin/grunt test"
+    "test": "grunt test"
   },
   "author": "Geordan Rosario <geordan@gmail.com>",
   "license": "MIT",
