@@ -23,10 +23,27 @@ module.exports = (grunt) ->
         src: ['**/*.jade']
         dest: 'angular/'
         ext: '.html'
+    karma:
+      test:
+        configFile: 'karma.conf.js'
+        singleRun: true
+        browsers: ['PhantomJS']
+    mochaTest:
+      test:
+        options:
+          reporter: 'spec'
+          require: [
+            'coffee-script/register'
+            'tests/mocha/setup'
+          ]
+        src: [ 'tests/mocha/**/*.coffee' ]
 
 
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-sass'
+  grunt.loadNpmTasks 'grunt-karma'
+  grunt.loadNpmTasks 'grunt-mocha-test'
 
   grunt.registerTask 'default', [ 'coffee', 'sass', 'jade' ]
+  grunt.registerTask 'test', [ 'karma', 'mochaTest' ]

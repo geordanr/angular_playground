@@ -7,7 +7,7 @@
   "scripts": {
     "build": "grunt",
     "start": "coffee express/server.coffee",
-    "test": "mocha --compilers coffee:coffee-script/register --require tests/mocha/setup --reporter spec tests/mocha"
+    "test": "grunt test"
   },
   "author": "Geordan Rosario <geordan@gmail.com>",
   "license": "MIT",
@@ -20,6 +20,8 @@
     "grunt-contrib-coffee": "^0.11.1",
     "grunt-contrib-jade": "^0.12.0",
     "grunt-contrib-sass": "^0.8.1",
+    "grunt-karma": "^0.9.0",
+    "grunt-mocha-test": "^0.11.0",
     "jade": "^1.6.0",
     "karma": "^0.12.23",
     "karma-chai": "^0.1.0",
@@ -27,6 +29,7 @@
     "karma-coffee-preprocessor": "^0.2.1",
     "karma-firefox-launcher": "^0.1.3",
     "karma-mocha": "^0.1.9",
+    "karma-phantomjs-launcher": "^0.1.4",
     "mocha": "^1.21.4",
     "sass": "^0.5.0",
     "supertest": "^0.13.0",
