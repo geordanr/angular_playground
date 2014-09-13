@@ -1,0 +1,23 @@
+{
+  "name": "angular_playground",
+  "version": "1.0.0",
+  "homepage": "https://github.com/geordanr/angular_playground",
+  "authors": [
+    "Geordan Rosario <geordan@gmail.com>"
+  ],
+  "description": "AngularJS playground",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "angular/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-mocks": "~1.2.24",
+    "angularjs": "~1.2.24"
+  }
+}
