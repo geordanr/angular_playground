@@ -6,7 +6,7 @@ app = exports.app = express()
 app.set 'port', process.env.PORT ? (if 'production' == app.get('env') then 80 else 3000)
 
 app.use morgan('dev')
-app.use express.static(__dirname + '/../angular/')
+app.use express.static(__dirname + '/../app/')
 
 app.listen app.get('port')
 console.log "Listening on port #{app.get 'port'}..."

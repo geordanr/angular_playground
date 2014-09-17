@@ -7,21 +7,21 @@ module.exports = (grunt) ->
         expand: true
         cwd: 'coffeescripts/'
         src: ['*.coffee']
-        dest: 'angular/javascripts/'
+        dest: 'app/javascripts/'
         ext: '.js'
     sass:
       compile:
         expand: true
         cwd: 'sass/'
         src: ['*.sass']
-        dest: 'angular/stylesheets/'
+        dest: 'app/stylesheets/'
         ext: '.css'
     jade:
       compile:
         expand: true
         cwd: 'jade/'
         src: ['**/*.jade']
-        dest: 'angular/'
+        dest: 'app/'
         ext: '.html'
     karma:
       test:

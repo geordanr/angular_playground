@@ -3,4 +3,4 @@ _vimrc_local.vim
 .sass-cache
 coffeelint.json
 node_modules
-angular/bower_components
+app/bower_components

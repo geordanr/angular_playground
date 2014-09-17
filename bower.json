@@ -12,12 +12,13 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "angular/bower_components",
+    "app/bower_components",
     "test",
     "tests"
   ],
   "dependencies": {
     "angular-mocks": "~1.2.24",
-    "angularjs": "~1.2.24"
+    "angularjs": "~1.2.24",
+    "angular-route": "~1.2.24"
   }
 }
