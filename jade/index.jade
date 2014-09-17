@@ -3,7 +3,8 @@ html(ng-app="exampleApp")
   head
     title Hello World
     script(src="bower_components/angularjs/angular.js")
+    script(src="bower_components/angular-route/angular-route.js")
+    script(src="javascripts/app.js")
     script(src="javascripts/controllers.js")
-  body(ng-controller="ExampleCtrl")
-    h1 Hello world!
-    | It's {{foo.now}}
+  body
+    div(ng-view)

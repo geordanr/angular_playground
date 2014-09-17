@@ -3,13 +3,21 @@
 
   exportObj = typeof exports !== "undefined" && exports !== null ? exports : this;
 
-  exportObj.exampleApp = angular.module('exampleApp', []);
+  exportObj.exampleControllers = angular.module('exampleControllers', []);
 
-  exportObj.exampleApp.controller('ExampleCtrl', function($scope) {
-    return $scope.foo = {
-      'now': new Date().toString()
-    };
-  });
+  exportObj.exampleControllers.controller('RootCtrl', [
+    '$scope', function($scope) {
+      return $scope.foo = {
+        'now': new Date().toString()
+      };
+    }
+  ]);
+
+  exportObj.exampleControllers.controller('ParamCtrl', [
+    '$scope', '$routeParams', function($scope, $routeParams) {
+      return $scope.id = $routeParams.id;
+    }
+  ]);
 
 }).call(this);
 

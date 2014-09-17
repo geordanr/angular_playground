@@ -1,7 +1,14 @@
 exportObj = exports ? this
 
-exportObj.exampleApp = angular.module 'exampleApp', []
+exportObj.exampleControllers = angular.module 'exampleControllers', []
 
-exportObj.exampleApp.controller 'ExampleCtrl', ($scope) ->
-  $scope.foo =
-    'now': new Date().toString()
+exportObj.exampleControllers.controller 'RootCtrl', [
+  '$scope', ($scope) ->
+    $scope.foo =
+      'now': new Date().toString()
+]
+
+exportObj.exampleControllers.controller 'ParamCtrl', [
+  '$scope', '$routeParams', ($scope, $routeParams) ->
+    $scope.id = $routeParams.id
+]
